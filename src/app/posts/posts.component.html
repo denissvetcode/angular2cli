@@ -1,0 +1,8 @@
+<div class="row">
+    <div class="col-md-5">
+        <app-post-list (postSelected)="selectedPost = $event"></app-post-list>
+    </div>
+    <div class="col-md-7">
+      <app-post-detail [selectedPost]="selectedPost"></app-post-detail>
+    </div>
+</div>
