@@ -6,7 +6,7 @@ import {Post} from "./post";
   templateUrl: './posts.component.html'
 })
 export class PostsComponent implements OnInit {
- selectedPost: Post;
+ // selectedPost: Post;
   constructor() { }
 
   ngOnInit() {

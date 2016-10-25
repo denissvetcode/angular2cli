@@ -12,6 +12,8 @@ import {PostDetailComponent} from './posts/post-detail/post-detail.component';
 import {DropdownDirective} from './dropdown.directive';
 import {PostService} from "./posts/post.service";
 import {routing} from "./app.routing";
+import { PostStartComponent } from './posts/post-start.component';
+import { PostEditComponent } from './posts/post-edit/post-edit.component';
 
 @NgModule({
     declarations: [
@@ -21,7 +23,9 @@ import {routing} from "./app.routing";
         PostListComponent,
         PostItemComponent,
         PostDetailComponent,
-        DropdownDirective
+        DropdownDirective,
+        PostStartComponent,
+        PostEditComponent
     ],
     imports: [
         BrowserModule,
