@@ -1,18 +1,11 @@
-import {Component, OnInit, Input} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Post} from "../post";
 
 @Component({
     selector: 'app-post-item',
     templateUrl: './post-item.component.html'
 })
-export class PostItemComponent implements OnInit {
+export class PostItemComponent {
     @Input() post: Post;
-    postId: number = 1;
-
-    constructor() {
-    }
-
-    ngOnInit() {
-    }
-
+    @Input() postId: number;
 }
