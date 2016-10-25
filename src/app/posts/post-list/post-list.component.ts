@@ -1,4 +1,4 @@
-import {Component, OnInit, EventEmitter, Output} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Post} from "../post";
 import post = http.post;
 import {PostService} from "../post.service";
@@ -9,7 +9,7 @@ import {PostService} from "../post.service";
 })
 export class PostListComponent implements OnInit {
     posts: Post[] = [];
-    @Output() postSelected = new EventEmitter<Post>();
+    // @Output() postSelected = new EventEmitter<Post>();
     // post = new Post(1, 1, 'Despre Moldova', 'saddsadadadasdadsadasdasd', []);
 
     constructor(private postService: PostService) {
@@ -19,7 +19,7 @@ export class PostListComponent implements OnInit {
         this.posts = this.postService.getPosts();
     }
 
-    onSelected(post: Post) {
-        this.postSelected.emit(post);
-    }
+    // onSelected(post: Post) {
+    //     this.postSelected.emit(post);
+    // }
 }
