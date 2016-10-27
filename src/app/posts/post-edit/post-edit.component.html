@@ -1,3 +1,30 @@
-<p>
-  post-edit works!
-</p>
+<div class="container-fluid">
+  <section class="container">
+    <div class="container-page">
+      <form>
+        <div class="col-md-6">
+          <h3 class="dark-grey">Editare post</h3>
+          <div class="form-group col-lg-12">
+            <label>Titlul</label>
+            <input type="text" class="form-control" ></div>
+          <div class="form-group col-lg-6">
+            <label>Textul postarii</label>
+            <!--<textarea [(ngModel)]="newPost.body" class="form-control" rows="5" id="post" name="post" required></textarea>-->
+            <textarea  class="form-control" rows="5" id="post" name="post" required></textarea>
+          </div>
+
+          <!--<div class="form-group col-lg-6">-->
+            <!--<label>UserId</label>-->
+            <!--&lt;!&ndash;<input [(ngModel)]="newPost.userId" type="number" name="userId" class="form-control"  id="userId" required>&ndash;&gt;-->
+            <!--<input  type="number" name="userId" class="form-control"  id="userId" required>-->
+          <!--</div>-->
+
+        </div>
+
+        <div class="col-md-6">
+          <button type="submit" class="btn btn-primary" (click)="newPost()">Trimite</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</div>

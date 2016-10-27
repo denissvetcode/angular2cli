@@ -5,7 +5,7 @@
 </div>
 <div class="row">
   <div class="col-xs-12">
-    <h1>{{selectedPost?.title}}</h1>
+    <h1>{{selectedPost.title}}</h1>
   </div>
   <div class="col-xs-12">
     <button class="btn btn-success">To Shopping List</button>
@@ -16,13 +16,13 @@
 <hr>
 <div class="row">
   <div class="col-xs-12">
-    <p>{{selectedPost?.body}}</p>
+    <p>{{selectedPost.body}}</p>
   </div>
 </div>
 <div class="row">
   <div class="col-xs-12">
     <ul class="list-group">
-      <li class="list-group-item" *ngFor="let comment of selectedPost?.comments">{{comment.name}} {{comment.body}}</li>
+      <li class="list-group-item" *ngFor="let comment of selectedPost.comments">{{comment.name}} {{comment.body}}</li>
     </ul>
   </div>
 </div>
